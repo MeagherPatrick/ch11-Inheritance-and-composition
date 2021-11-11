@@ -4,7 +4,7 @@
 patientType::patientType()
 {
   string fName = "", lName = "";
-  personType(fName, lName);
+  setName(fName, lName);
    id = 0;
    age = 0;
    DOB = "";
@@ -23,7 +23,7 @@ void patientType::set_info()
   cout << "Please enter last name: ";
   cin.ignore(1000, '\n');
   cin >> lName;
-  personType::setName(fName, lName);
+  setName(fName, lName);
   DOB = "01/09/1995";
   date_admitted = " 11/05/2016";
   date_discharge = "11/05/2020";
